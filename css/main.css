@@ -25,6 +25,7 @@ main {
   flex-direction: column;
   background-color: var(--card-bg-clr);
   width: 85%;
+  max-width: 500px;
   border-radius: .5rem;
   overflow: hidden;
 }
@@ -97,4 +98,19 @@ h2 {
   font-weight: 400;
   color: var(--stats-heading-clr);
   font-size: .9rem;
+}
+
+
+@media (min-width: 1000px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+  }
+
+  main {
+    max-width: none;
+    width: 70%;
+    flex-direction: row-reverse;
+  }
 }
